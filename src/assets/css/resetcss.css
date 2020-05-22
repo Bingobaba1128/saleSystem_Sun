@@ -1,0 +1,318 @@
+/* html, body, div, span, object, iframe,h1, h2,
+
+h3, h4, h5, h6,  blockquote, pre,abbr, address, cite, code,del, dfn,
+
+em, img, ins,kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd,
+
+ol, ul, li,fieldset, form, label, legend,table, caption, tbody,
+
+tfoot,thead,tr, th, td,article, aside, canvas, details, figcaption,
+
+figure, footer, header, hgroup, menu, nav, section, summary,time, mark,
+
+audio, video {
+
+margin:0;
+
+padding:0;
+
+border:0;
+
+outline:0;
+
+font-size:100%;
+
+vertical-align:baseline;
+
+background:transparent;
+
+outline-style:none;/*FF*/
+
+/* } */
+
+.hand {
+    cursor: pointer !important;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    /* line-height: 1; */
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    height: 100%;
+}
+
+/* *{
+    padding:0;
+    margin:0;
+    font-size:0;
+} */
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+/*css为clearfix，清除浮动*/
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /*IE/7/6*/
+}
+
+html, body, ul, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, p {
+    margin: 0;
+    padding: 0
+}
+
+fieldset, img {
+    border: 0
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+a {
+    color: #666;
+    text-decoration: none
+}
+
+address, caption, cite, code, dfn, th, var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ul, ol {
+    list-style: none
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体"
+}
+
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+select, input {
+    vertical-align: middle
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0
+}
+
+input[type="text"], input[type="password"], textarea {
+    outline-style: none;
+    /* -webkit-appearance: none */
+}
+
+textarea {
+    resize: none
+}
+
+table {
+    border-collapse: collapse
+}
+
+/* 表格添加 fixed 特定样式调整 */
+.el-table__fixed::before, .el-table__fixed-right::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    z-index: 4;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* 整个滚动条 */
+
+::-webkit-scrollbar {
+    width: 11px !important;
+    height: 11px !important;
+}
+
+/* 滚动条有滑块的轨道部分 */
+
+::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+/* 滚动条滑块(竖向:vertical 横向:horizontal) */
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background-color: #c8c8c8;
+    border-radius: 5px;
+}
+
+/* 滚动条滑块hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #28f;
+}
+
+/* 同时有垂直和水平滚动条时交汇的部分 */
+
+::-webkit-scrollbar-corner {
+    display: block;
+    /* 修复交汇时出现的白块 */
+}
+
+[v-cloak] {
+    display: none !important;
+}
+
+.hand {
+    cursor: pointer !important;
+}
+
+.pd20 {
+    padding: 20px;
+}
+
+.pd10 {
+    padding: 10px;
+}
+
+.theme_color {
+    color: #5981EA;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.pl20 {
+    padding-left: 20px;
+}
+
+.pr20 {
+    padding-right: 20px;
+}
+
+.pt20 {
+    padding-top: 20px;
+}
+
+.pb20 {
+    padding-bottom: 20px;
+}
+
+/* 上下排序 */
+
+.lianDateSort {
+    position: relative;
+    cursor: pointer;
+}
+
+.lianDateSortRowDown {
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-top: 5px solid #000000;
+    position: absolute;
+    top: 7px;
+}
+
+.lianDateSortRowUp {
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-bottom: 5px solid #000000;
+    position: absolute;
+    top: 2px;
+}
+
+/* 刷新 */
+
+.refresh {
+    transition: all 1s ease-in;
+    transform-origin: center center;
+}
+
+/* viewerjs背景隐藏 */
+
+#dowebok {
+    visibility: hidden !important;
+}
+
+/* 头部未加载骨架屏 */
+
+.hcontent {
+    min-height: 60px;
+    background: #fafafa;
+}
+
+/* 解决element-ui的table表格控件表头与内容列不对齐问题 */
+
+.el-table th.gutter {
+    display: table-cell!important;
+}
