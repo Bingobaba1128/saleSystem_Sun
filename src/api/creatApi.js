@@ -19,3 +19,12 @@ export const postTotallogin = (data) => {
     })
 }
 
+//无二次跳转，通过session数据，get请求直接登录
+export const autologin = (data) => {
+    return api({
+        baseURL : 'http://192.168.5.103:8080',
+        url: "/ERP/login",
+        method: "get",
+        data
+    })
+}
